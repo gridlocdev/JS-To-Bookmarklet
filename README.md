@@ -4,13 +4,11 @@
 <img alt="JavaScript Bookmarklet Logo" src="./README_images/JavaScript-Bookmarklet-logo.png" width="150px">
 </p>  
 
-<hr/>
-
 - [JS To Bookmarklet](#js-to-bookmarklet)
   - [What are Bookmarklets](#what-are-bookmarklets)
   - [What is this tool?](#what-is-this-tool)
   - [What does this PowerShell script do?](#what-does-this-powershell-script-do)
-  - [How do I run this script?](#how-do-i-run-this-script)
+  - [How do I use this script?](#how-do-i-use-this-script)
   - [How do I create a Bookmarklet?](#how-do-i-create-a-bookmarklet)
     - [Google Chrome](#google-chrome)
     - [Brave](#brave)
@@ -27,11 +25,11 @@ JS-to-bookmarklet is a PowerShell script I created to convert Javascript files i
 
 ## What does this PowerShell script do?
 
-It's a pretty small utility, in fact it's a lesser amount of lines than this README. All it does is takes out all the line breaks and spaces from a JavaScript file and inserts the Bookmarklet browser syntax around it. Feel free to edit it as you need if something does not work in your JavaScript bookmarklet.
+It's a pretty small utility, in fact it's a lesser amount of lines than this README. All it does is takes out all the line breaks and spaces from a JavaScript file and inserts the Bookmarklet browser syntax around it. Feel free to edit it as you need if something does not work in your exported JavaScript bookmarklet.
 
-## How do I run this script?
+## How do I use this script?
 
-1. Download the files from this repository through the "Clone" button, or using the git command line
+1. Download the files from this repository through this website's "Code" button -> Download ZIP, or using the git command line
 2. Navigate to the downloaded folder in File Explorer
 3. Add your JavaScript file to the root of the folder, next to the .ps1 file
 4. Open the PowerShell file in a text editor, and change the $fileName to your script's name
