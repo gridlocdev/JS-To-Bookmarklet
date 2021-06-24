@@ -52,7 +52,7 @@ if (Test-Path($config.input_folder)) {
     }
 }
 else {
-    Write-Warning("ERROR: [[Input path not valid]] Please supply a valid folder path for the output_folder setting in settings.json.");
+    Write-Warning("ERROR: [[Input path not valid]] Please supply a valid folder path for the input_folder setting in settings.json.");
     Write-Host("`n" + "Press any key to close this window...");
     $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
     Exit
