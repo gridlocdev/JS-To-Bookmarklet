@@ -11,9 +11,9 @@
   - [How do I use this script?](#how-do-i-use-this-script)
   - [How do I create a Bookmarklet?](#how-do-i-create-a-bookmarklet)
     - [Google Chrome](#google-chrome)
-    - [Brave](#brave)
     - [Microsoft Edge](#microsoft-edge)
     - [Firefox](#firefox)
+    - [Brave](#brave)
 
 ## What are Bookmarklets
 
@@ -54,16 +54,6 @@ After you create your bookmarklet one-liner JavaScript file, you'll probably wan
 >    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
 > 5. Click "Save"
 
-### Brave
-
-> 1. Navigate to the URL [brave://bookmarks/](brave://bookmarks/)
-> 2. On the top right of Bookmarks page under the navbar, click the hamburger icon
-> 3. Select "Add new bookmark"
-> 4. Enter the following information:
->    1. Name: What you would like your bookmark title text to say
->    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
-> 5. Click "Save"
-
 ### Microsoft Edge
 
 > 1. Navigate to the URL [edge://favorites/](https://edge://favorites/)
@@ -81,3 +71,13 @@ After you create your bookmarklet one-liner JavaScript file, you'll probably wan
 >    1. Name: What you would like your bookmark title text to say
 >    2. Location: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
 > 4. Click "Add"
+
+### Brave
+
+> 1. Navigate to the URL [brave://bookmarks/](brave://bookmarks/)
+> 2. On the top right of Bookmarks page under the navbar, click the hamburger icon
+> 3. Select "Add new bookmark"
+> 4. Enter the following information:
+>    1. Name: What you would like your bookmark title text to say
+>    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
+> 5. Click "Save"
