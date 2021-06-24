@@ -17,7 +17,7 @@
 
 ## What are Bookmarklets
 
-Bookmarklets are small JavaScript snippets that you can save into your Bookmarks bar. You can run the JavaScript code by just clicking the bookmark like any other usual link on your bookmarks bar.
+Bookmarklets are small JavaScript snippets that you can save into your browser's bookmarks bar. These are generally used to perform usually time consuming or repetitive tasks via executing JavaScript instead of doing them manually.
 
 ## What is this tool?
 
@@ -42,7 +42,7 @@ It's a pretty small utility, in fact it's a lesser amount of lines than this REA
 
 ## How do I create a Bookmarklet?
 
-After you create your bookmarklet one-liner JavaScript file, you'll probably want to add it to the browser so you can use it.
+After you create your bookmarklet one-liner JavaScript file, you'll probably want to add it to the browser so you can use it.Once created, you can run the JavaScript code like any other usual link by just clicking the bookmark.
 
 ### Google Chrome
 
