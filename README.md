@@ -35,8 +35,8 @@ It's a pretty small utility, in fact it's a lesser amount of lines than this REA
 2. Navigate to the downloaded folder in File Explorer
 3. Add your JavaScript file to the root of the folder, next to the .ps1 file
 4. Open the settings.json file in a text editor
-   1. Change the ```script_name``` to your script's name, the file you'd like to convert to a Bookmarklet
-   2. Change the ```bookmarklet_output_folder``` where you would like to output the file.
+   1. Change the value of the setting ```script_name``` to your script's name, the file you'd like to convert to a Bookmarklet
+   2. Change the value of the setting ```bookmarklet_output_folder``` where you would like to output the file.
 5. Navigate back to the downloaded folder in File Explorer
 6. Right click the ```JS-to-bookmarklet.ps1``` PowerShell file and select "_Run with PowerShell_"
 
