@@ -1,11 +1,19 @@
-# Enter the name of your JavaScript file here:
-$fileName = "MyScript.js"
+# File name pulled from the configuration file settings.json
+$config = Get-Content "./settings.json" | ConvertFrom-Json
+
+$fileName = $config.script_name
 
 # Starts the script in this PowerShell script's root directory
 Set-Location($PSScriptRoot);
 
 $inputFilePath = "./$($fileName)"
-$outputFilePath = "./$($fileName).bookmarklet.txt"
+
+# Checks if the configuration file's folder name ends with a "/", and adds it if it does not have it
+if ($config.bookmarklet_output_folder.EndsWith("/") -eq $false) {
+    $config.bookmarklet_output_folder += "/"
+}
+
+$outputFilePath = $config.bookmarklet_output_folder + "$($fileName).bookmarklet.txt"
 
 # Test the file paths for validity
 if (Test-Path($inputFilePath)) {
