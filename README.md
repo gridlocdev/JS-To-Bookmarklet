@@ -23,6 +23,8 @@ Bookmarklets are small JavaScript snippets that you can save into your Bookmarks
 
 JS-to-bookmarklet is a PowerShell script I created to convert Javascript files into the Bookmarklet syntax.
 
+This script is for folks that can code in JavaScript that would like to create a custom JavaScript file to be able to execute on a page.
+
 ## What does this PowerShell script do?
 
 It's a pretty small utility, in fact it's a lesser amount of lines than this README. All it does is takes out all the line breaks and spaces from a JavaScript file and inserts the Bookmarklet browser syntax around it. Feel free to edit it as you need if something does not work in your exported JavaScript bookmarklet.
