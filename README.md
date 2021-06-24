@@ -27,7 +27,7 @@ This script is for folks that can code in JavaScript that would like to create a
 
 ## What does this PowerShell script do?
 
-It's a pretty small utility, in fact it's a lesser amount of lines than this README. All it does is takes out all the line breaks and spaces from a JavaScript file and inserts the Bookmarklet browser syntax around it. Feel free to edit it as you need if something does not work in your exported JavaScript bookmarklet.
+It's a pretty small utility, all it does is takes out all the line breaks and spaces from a JavaScript file and inserts the Bookmarklet browser syntax around it. Feel free to edit it as you need if something does not work in your exported JavaScript bookmarklet.
 
 ## How do I use this script?
 
