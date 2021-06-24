@@ -9,7 +9,7 @@
   - [What is this tool?](#what-is-this-tool)
   - [What does this PowerShell script do?](#what-does-this-powershell-script-do)
   - [How do I use this script?](#how-do-i-use-this-script)
-  - [How do I create a Bookmarklet?](#how-do-i-create-a-bookmarklet)
+  - [How do I add the Bookmarklet to my browser?](#how-do-i-add-the-bookmarklet-to-my-browser)
     - [Google Chrome](#google-chrome)
     - [Microsoft Edge](#microsoft-edge)
     - [Firefox](#firefox)
@@ -31,18 +31,20 @@ It's a pretty small utility, in fact it's a lesser amount of lines than this REA
 
 ## How do I use this script?
 
-1. Download the files from this repository through this website's "Code" button -> Download ZIP, or using the git command line
+1. Download the files from this repository through this website's "Code" button -> Download ZIP, or using the Git CLI
 2. Navigate to the downloaded folder in File Explorer
-3. Add your JavaScript file to the root of the folder, next to the .ps1 file
-4. Open the settings.json file in a text editor
-   1. Change the value of the setting ```script_name``` to your script's name, the file you'd like to convert to a Bookmarklet
-   2. Change the value of the setting ```bookmarklet_output_folder``` where you would like to output the file.
+3. Add the JavaScript file you would like to make a bookmarklet to the root of the folder, next to the .ps1 file
+4. Open the settings.json file in a text editor, and fix up the config file to where you'd like the script to look on your machine.
+   1. Change the value of the setting ```script_name``` to your script's name.
+   2. Change the value of the setting ```input_folder``` to the folder your script is located in.
+   3. Change the value of the setting ```output_folder``` where you would like to output the Bookmarklet text file.
 5. Navigate back to the downloaded folder in File Explorer
 6. Right click the ```JS-to-bookmarklet.ps1``` PowerShell file and select "_Run with PowerShell_"
+7. The output is stored in the file ```{{Your File's Name}}.js.bookmarklet.txt```. Open the file, then check out the below instructions on how to add it to your browser! : [How do I add the Bookmarklet to my browser?](#how-do-i-add-the-bookmarklet-to-my-browser)
 
-## How do I create a Bookmarklet?
+## How do I add the Bookmarklet to my browser?
 
-After you create your bookmarklet one-liner JavaScript file, you'll probably want to add it to the browser so you can use it.Once created, you can run the JavaScript code like any other usual link by just clicking the bookmark.
+After you create your bookmarklet one-liner JavaScript file, you'll probably want to add it to the browser so you can use it. Once created, you can run the JavaScript code like any other usual link by just clicking the bookmark.
 
 ### Google Chrome
 
@@ -51,7 +53,7 @@ After you create your bookmarklet one-liner JavaScript file, you'll probably wan
 > 3. Select "Add new bookmark"
 > 4. Enter the following information:
 >    1. Name: What you would like your bookmark title text to say
->    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
+>    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file ```{{Your File's Name}}.js.bookmarklet.txt```
 > 5. Click "Save"
 
 ### Microsoft Edge
@@ -60,7 +62,7 @@ After you create your bookmarklet one-liner JavaScript file, you'll probably wan
 > 2. On the upper right of the Favorites page, click "_Add favorite_"
 > 3. Enter the following information:
 >    1. Name: What you would like your bookmark title text to say
->    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
+>    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file ```{{Your File's Name}}.js.bookmarklet.txt```
 > 4. Click "Save"
 
 ### Firefox
@@ -69,7 +71,7 @@ After you create your bookmarklet one-liner JavaScript file, you'll probably wan
 > 2. Click "Organize", then "New Bookmark"
 > 3. Enter the following information:
 >    1. Name: What you would like your bookmark title text to say
->    2. Location: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
+>    2. Location: Insert your Bookmarklet JavaScript code, which was outputted to the file ```{{Your File's Name}}.js.bookmarklet.txt```
 > 4. Click "Add"
 
 ### Brave
@@ -79,5 +81,5 @@ After you create your bookmarklet one-liner JavaScript file, you'll probably wan
 > 3. Select "Add new bookmark"
 > 4. Enter the following information:
 >    1. Name: What you would like your bookmark title text to say
->    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file {YourFile.js}.bookmarklet.txt
+>    2. URL: Insert your Bookmarklet JavaScript code, which was outputted to the file ```{{Your File's Name}}.js.bookmarklet.txt```
 > 5. Click "Save"

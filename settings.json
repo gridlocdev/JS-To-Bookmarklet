@@ -1,4 +1,5 @@
 {
     "script_name": "MyScript.js",
-    "bookmarklet_output_folder": "." 
+    "input_folder": "./",
+    "output_folder": "./" 
 }

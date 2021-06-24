@@ -6,14 +6,16 @@ $fileName = $config.script_name;
 # Starts the script in this PowerShell script's root directory
 Set-Location($PSScriptRoot);
 
-$inputFilePath = "./$($fileName)";
-
 # Checks if the configuration file's folder name ends with a "/", and adds it if it does not have it
-if ($config.bookmarklet_output_folder.EndsWith("/") -eq $false) {
-    $config.bookmarklet_output_folder += "/";
+if ($config.input_folder.EndsWith("/") -eq $false) {
+    $config.input_folder += "/";
+}
+if ($config.output_folder.EndsWith("/") -eq $false) {
+    $config.output_folder += "/";
 }
 
-$outputFilePath = $config.bookmarklet_output_folder + "$($fileName).bookmarklet.txt";
+$inputFilePath = $config.input_folder + $fileName;
+$outputFilePath = $config.output_folder + "$($fileName).bookmarklet.txt";
 
 # Test the file paths for validity
 if (Test-Path($inputFilePath)) {
